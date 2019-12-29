@@ -11,7 +11,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class Register_page {
-	public boolean calltoOpenHome(String name,String username,String conatctnumber, String password,String email) {
+	public boolean calltoOpenHome(String name,String username,String contactnumber, String password,String email) {
 			//check if name == string
 		//check if user name == string
 		//check if contact number == number
@@ -19,8 +19,14 @@ public class Register_page {
 		//only then open Home and return true
 		//else return false
 		 //write code to open Home window(object)
+		if((name.contains(name))&&(username.contains(username))&&(contactnumber.contains(contactnumber))&&(email.contains(email)))
+		{
+			Home obj = new Home();
+			return true;
+		}
 		return false;
 	}
+
 	public JFrame f;
     public Register_page()
     {
@@ -59,10 +65,10 @@ public class Register_page {
                                
                  String name = tf1.getText();
                  String username = tf4.getText();
-                 String conatctnumber = tf2.getText();
+                 String contactnumber = tf2.getText();
                  String password = tf5.getText();
                  String email = tf3.getText();
-                 calltoOpenHome(name,username,conatctnumber,password,email);
+                 calltoOpenHome(name,username,contactnumber,password,email);
              }
              
          });

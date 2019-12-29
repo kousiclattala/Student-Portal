@@ -65,8 +65,10 @@ public class Home {
         f.setSize(600,500);
         f.setLayout(null);
         
+        
         //write your code here to make the window visible
-        f.setBackground(Color.GRAY);
+        f.setBackground(Color.BLUE);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.setVisible(true);
     }
 }

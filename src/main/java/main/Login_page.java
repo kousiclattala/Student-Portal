@@ -64,10 +64,16 @@ public class Login_page {
         jf.setDefaultCloseOperation(jf.EXIT_ON_CLOSE);
     }
     
-    public boolean validateData(String username, String password) {
+    public boolean validateData(String username, String password) 
+    {
     	//compare if user is equal to "user" and password is equal to "pass"
     	//only the return true and allow them to enter.
     	//TODO Finish data validation
+    	
+    	if((username.equals(username))&&(password.equals(password)))
+    			{
+    				return true;
+    			}
     	
     	return false;
     }
